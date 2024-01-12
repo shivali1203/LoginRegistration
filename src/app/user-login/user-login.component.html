@@ -1,0 +1,27 @@
+
+
+<div class="wrapper">
+        <div class="logo">
+            <img src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-bird-symbols-png-logo-0.png" alt="">
+        </div>
+
+        <div class="text-center mt-4 name">
+          Login
+
+        </div>
+        <form class="p-3 mt-3" [formGroup]="loginGroup" (submit)="loginUser()">
+            <div class="form-field d-flex align-items-center">
+                <span class="far fa-user"></span>
+                <input type="text" formControlName="email" id="userName" placeholder="Username">
+            </div>
+            <div class="form-field d-flex align-items-center">
+                <i class="fa fa-user"></i>
+                <input type="password" formControlName="password" id="pwd" placeholder="Password">
+            </div>
+            <button class="btn mt-3"><input type="submit" value="login"></button>
+        </form>
+        <div class="text-center fs-6">
+            <a href="#">Forget password?</a> or <a href="#">Sign up</a>
+        </div>
+    </div>
+
